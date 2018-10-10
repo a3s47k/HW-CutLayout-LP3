@@ -1,0 +1,25 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+block body
+	section.article-1
+		.container-fluid.px-0
+			.row.no-gutters
+				.col
+					img(src="./img/cover.png", alt="cover").img-fluid.image-cover
+					p.text-title Lorem ipsum dolor sit amet consectetur
+					p.text-detail 
+						| Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+						br
+						| Natus, iste quod perspiciatis sapiente nihil nemo ducimus
+	section.article-2
+		.container
+			.row.pt-5
+				.col
+					h2 Lorem ipsum dolor sit 
+			.row
+				.col-sm-6
