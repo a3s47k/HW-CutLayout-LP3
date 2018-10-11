@@ -6406,12 +6406,15 @@ body {
       position: relative;
       overflow: hidden;
       border-radius: 0.5rem; }
+      body .article-2 .item figure .content-image i {
+        font-size: 3rem;
+        color: #fff; }
       body .article-2 .item figure .content-image .img-hover {
         position: absolute;
         left: 50%;
         opacity: 0;
-        z-index: 999;
-        top: 50%;
+        z-index: 99;
+        top: 40%;
         transform: translateX(-50%); }
       body .article-2 .item figure .content-image .img-cover {
         width: 100%; }
@@ -6453,8 +6456,8 @@ body {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      width: 2rem;
-      height: 2rem; }
+      width: 5%;
+      height: 100%; }
     body .article-3 .owl-carousel .owl-prev {
       left: -3rem; }
     body .article-3 .owl-carousel .owl-next {
