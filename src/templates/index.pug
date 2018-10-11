@@ -6,20 +6,84 @@ block variables
 	- var bodyclass = 'home'
 
 block body
-	section.article-1
-		.container-fluid.px-0
-			.row.no-gutters
-				.col
-					img(src="./img/cover.png", alt="cover").img-fluid.image-cover
-					p.text-title Lorem ipsum dolor sit amet consectetur
-					p.text-detail 
-						| Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-						br
-						| Natus, iste quod perspiciatis sapiente nihil nemo ducimus
+	.owl-one.owl-carousel.owl-theme
+		.item
+			img(src="./img/cover.png", alt="cover")
+			.text-title 
+				h2 Lorem ipsum dolor
+				p.text-detail Lorem ipsum dolor sit, amet consectetur adipisicing elit
+		.item
+			img(src="./img/cover.png", alt="cover")
+			.text-title 
+				h2 Lorem ipsum dolor
+				p.text-detail Lorem ipsum dolor sit, amet consectetur adipisicing elit
+		.item
+			img(src="./img/cover.png", alt="cover")
+			.text-title 
+				h2 Lorem ipsum dolor
+				p.text-detail Lorem ipsum dolor sit, amet consectetur adipisicing elit
+				
+	
+	//- section.article-1
+	//- 	.container-fluid.px-0
+	//- 		.row.no-gutters
+	//- 			.col
+	//- 				img(src="./img/cover.png", alt="cover").img-fluid.image-cover
+	//- 				p.text-title Lorem ipsum dolor sit amet consectetur
+	//- 				p.text-detail 
+	//- 					| Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+	//- 					br
+	//- 					| Natus, iste quod perspiciatis sapiente nihil nemo ducimus
 	section.article-2
 		.container
 			.row.pt-5
 				.col
-					h2 Lorem ipsum dolor sit 
+					h2 Lorem 
+						span ipsum dolor sit 
+			.row.pt-5
+				.col-12.col-md-4
+					a(href="#")
+						.item
+							figure
+								img(src="./img/hover.png", alt="com-1").img-fluid.img-hover
+								img(src="./img/com-2.png", alt="com-2").img-fluid
+
+							figcaption.figure-caption
+								h5 Lorem ipsum, dolor sit amet consectetur adipisicing
+								p.text-date 26/08/2018
+								p.text-detail Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum provident eaque magni, recusandae, placeat
+				.col-12.col-md-4
+					a(href="#")
+						.item
+							figure
+								img(src="./img/hover.png", alt="com-1").img-fluid.img-hover
+								img(src="./img/com-2.png", alt="com-2").img-fluid
+
+							figcaption.figure-caption
+								h5 Lorem ipsum, dolor sit amet consectetur adipisicing
+								p.text-date 26/08/2018
+								p.text-detail Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum provident eaque magni, recusandae, placeat
+				.col-12.col-md-4
+					a(href="#")
+						.item
+							figure
+								img(src="./img/hover.png", alt="com-1").img-fluid.img-hover
+								img(src="./img/com-3.png", alt="com-3").img-fluid
+							figcaption.figure-caption
+								h5 Lorem ipsum, dolor sit amet consectetur adipisicing
+								p.text-date 26/08/2018
+								p.text-detail Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum provident eaque magni, recusandae, placeat
+	section.article-3.pt-5
+		.container
 			.row
-				.col-sm-6
+				.col
+					.owl-two.owl-carousel.owl-theme
+						img(src="./img/09.png", alt="9").img-fluid.item
+						img(src="./img/10.png", alt="10").img-fluid.item
+						img(src="./img/11.png", alt="11").img-fluid.item
+						img(src="./img/12.png", alt="12").img-fluid.item
+						img(src="./img/13.png", alt="13").img-fluid.item
+						img(src="./img/14.png", alt="14").img-fluid.item
+						img(src="./img/12.png", alt="12").img-fluid.item
+						img(src="./img/13.png", alt="13").img-fluid.item
+						img(src="./img/14.png", alt="14").img-fluid.item

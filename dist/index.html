@@ -84,14 +84,15 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body class="home-page" id="top-page"><!-- ////////////// Header ////////////// --><!-- ////////////// HEADER ////////////// -->
+<!--Add active class to li.nav-item then write it like &:hover-->
     <header>
       <div class="section">
         <div class="container">
-          <nav class="navbar navbar-expand-lg navbar-light"><a class="navbar-brand" href="#"><img class="img-fluid" src="./img/logo.png" alt="logo" width="220px"></a>
+          <nav class="navbar navbar-expand-lg navbar-light py-0"><a class="navbar-brand" href="#"><img class="img-fluid" src="./img/logo.png" alt="logo" width="220px"></a>
             <button class="navbar-toggler ml-auto mr-3" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon ml-auto"></span></button>
             <div class="collapse navbar-collapse" id="navbarText">
               <ul class="navbar-nav ml-auto text-right">
-                <li class="nav-item mr-3"><a class="nav-link" href="#">Home </a></li>
+                <li class="nav-item mr-3 active"><a class="nav-link" href="#">Home </a></li>
                 <li class="nav-item mr-3"><a class="nav-link" href="#">Services</a></li>
                 <li class="nav-item mr-3"><a class="nav-link" href="#">About</a></li>
                 <li class="nav-item mr-3"><a class="nav-link" href="#">Contact</a></li>
@@ -103,39 +104,123 @@
     </header><!-- ////////////// HEADER ////////////// --><!-- ////////////// End Header ////////////// -->
 <!-- ////////////// Begin Main ////////////// -->
     <main>
-      <section class="article-1">
-        <div class="container-fluid px-0">
-          <div class="row no-gutters">
-            <div class="col"><img class="img-fluid image-cover" src="./img/cover.png" alt="cover">
-              <p class="text-title">Lorem ipsum dolor sit amet consectetur</p>
-              <p class="text-detail">
-                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br>Natus, iste quod perspiciatis sapiente nihil nemo ducimus</p>
-            </div>
+      <div class="owl-one owl-carousel owl-theme">
+        <div class="item"><img src="./img/cover.png" alt="cover">
+          <div class="text-title"> 
+            <h2>Lorem ipsum dolor</h2>
+            <p class="text-detail">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
           </div>
         </div>
-      </section>
+        <div class="item"><img src="./img/cover.png" alt="cover">
+          <div class="text-title"> 
+            <h2>Lorem ipsum dolor</h2>
+            <p class="text-detail">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+          </div>
+        </div>
+        <div class="item"><img src="./img/cover.png" alt="cover">
+          <div class="text-title"> 
+            <h2>Lorem ipsum dolor</h2>
+            <p class="text-detail">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+          </div>
+        </div>
+      </div>
       <section class="article-2">
         <div class="container">
           <div class="row pt-5">
             <div class="col">
-              <h2>Lorem ipsum dolor sit </h2>
+              <h2>Lorem <span>ipsum dolor sit </span></h2>
             </div>
           </div>
+          <div class="row pt-5">
+            <div class="col-12 col-md-4"><a href="#">
+                <div class="item">
+                  <figure><img class="img-fluid img-hover" src="./img/hover.png" alt="com-1"><img class="img-fluid" src="./img/com-2.png" alt="com-2"></figure>
+                  <figcaption class="figure-caption">
+                    <h5>Lorem ipsum, dolor sit amet consectetur adipisicing</h5>
+                    <p class="text-date">26/08/2018</p>
+                    <p class="text-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum provident eaque magni, recusandae, placeat</p>
+                  </figcaption>
+                </div></a></div>
+            <div class="col-12 col-md-4"><a href="#">
+                <div class="item">
+                  <figure><img class="img-fluid img-hover" src="./img/hover.png" alt="com-1"><img class="img-fluid" src="./img/com-2.png" alt="com-2"></figure>
+                  <figcaption class="figure-caption">
+                    <h5>Lorem ipsum, dolor sit amet consectetur adipisicing</h5>
+                    <p class="text-date">26/08/2018</p>
+                    <p class="text-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum provident eaque magni, recusandae, placeat</p>
+                  </figcaption>
+                </div></a></div>
+            <div class="col-12 col-md-4"><a href="#">
+                <div class="item">
+                  <figure><img class="img-fluid img-hover" src="./img/hover.png" alt="com-1"><img class="img-fluid" src="./img/com-3.png" alt="com-3"></figure>
+                  <figcaption class="figure-caption">
+                    <h5>Lorem ipsum, dolor sit amet consectetur adipisicing</h5>
+                    <p class="text-date">26/08/2018</p>
+                    <p class="text-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum provident eaque magni, recusandae, placeat</p>
+                  </figcaption>
+                </div></a></div>
+          </div>
+        </div>
+      </section>
+      <section class="article-3 pt-5">
+        <div class="container">
           <div class="row">
-            <div class="col-sm-6"></div>
+            <div class="col">
+              <div class="owl-two owl-carousel owl-theme"><img class="img-fluid item" src="./img/09.png" alt="9"><img class="img-fluid item" src="./img/10.png" alt="10"><img class="img-fluid item" src="./img/11.png" alt="11"><img class="img-fluid item" src="./img/12.png" alt="12"><img class="img-fluid item" src="./img/13.png" alt="13"><img class="img-fluid item" src="./img/14.png" alt="14"><img class="img-fluid item" src="./img/12.png" alt="12"><img class="img-fluid item" src="./img/13.png" alt="13"><img class="img-fluid item" src="./img/14.png" alt="14"></div>
+            </div>
           </div>
         </div>
       </section>
     </main><!-- ////////////// End Main ////////////// -->
 <!-- ////////////// Footer ////////////// -->
     <footer class="footer">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col copyright text-center">
-            <p class="m-b-0">Copyright 2018 by <a href="/">FullStack Vietnam.</a></p>
+      <section class="footer-1st">
+        <div class="container">
+          <div class="row pt-5">
+            <div class="col-sm-12 col-md-4">
+              <h4>FULL STACK VIETNAM</h4>
+              <p class="text-color-f">Mobile: (+84)09525165</p>
+              <p class="text-color-f">E-mail: admin@fullstackvietnam.com</p>
+              <p class="text-color-f">Address: 28, 2nd Street -CITYLAND, ward 7, Go Vap District, HCM City</p>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <h4 class="ml-5">LINKS</h4>
+              <ul>
+                <li><a href="#"><i class="fa fa-arrow-right">Front-end Master course</i></a></li>
+                <li><a href="#"><i class="fa fa-arrow-right">Fullstack Developer course</i></a></li>
+                <li><a href="#"><i class="fa fa-arrow-right">Profestional Designer</i></a></li>
+                <li><a href="#"><i class="fa fa-arrow-right">Current class</i></a></li>
+                <li><a href="#"><i class="fa fa-arrow-right">Register Course</i></a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <h4></h4><br>
+              <ul>
+                <li><a href="#"><i class="fa fa-arrow-right">Front-end Master course</i></a></li>
+                <li><a href="#"><i class="fa fa-arrow-right">Fullstack Developer course</i></a></li>
+                <li><a href="#"><i class="fa fa-arrow-right">Profestional Designer</i></a></li>
+                <li><a href="#"><i class="fa fa-arrow-right">Current class</i></a></li>
+                <li><a href="#"><i class="fa fa-arrow-right">Register Course</i></a></li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section class="footer-2nd">
+        <div class="container">
+          <div class="row pt-4">
+            <div class="col-sm-6 col-md-8 my-auto">
+              <p class="text-white">Copyright 2018 by <a class="text-white" href="/">FullStack Vietnam.</a></p>
+            </div>
+            <div class="col-sm-6 col-md-4 mb-3">
+              <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-facebook"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </footer><!-- ////////////// End Footer ////////////// -->
 <!-- ////////////// Javascript Include ////////////// -->
     <!-- inject:js -->

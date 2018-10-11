@@ -1,3 +1,5 @@
+//Inset to move line to top
+//Add line height to move box shadow to top
 $color-white: #fff
 $color-cyan: #00c4c9
 $color-blue: #083e64
@@ -9,39 +11,152 @@ header
 			.nav-link
 				color: black
 				font-size: 1.2rem
+				line-height: 3rem
+			&:hover,&.active
+				box-shadow: 0 3px 0 0px $color-purple inset
+				color: $color-purple
+				font-size: 1.2rem
+footer
+	.footer-1st
+		background: $color-cyan
+		h4
+			color: $color-blue
+		.text-color-f
+			color: $color-white
+		ul
+			list-style: none
+			
+			li
+				a
+					color: $color-white
+					text-decoration: none
+	.footer-2nd
+		background: $color-blue
+		
+		.text-white
+			color: $color-white
+		.nav
+			justify-content: center
+			.nav-item
+				margin-right: 1.5rem
+				
+				&:lastchild
+					margin-right: 0
 				&:hover
-					border-top: 2px solid $color-purple
-					color: $color-purple
+					.nav-link
+						color: $color-cyan
+				.nav-link
+					border-radius: 50%
+					overflow: hidden
+					color: white 
+					font-size: 1.5rem
+					text-align: center
+					align-items: center
+					display: flex
+					color: $color-blue
+					background: $color-white
+					justify-content: center
+
+
 body
 	background: $color-white
-	.article-1
-		.image-cover
-			width: 100%
-			position: relative
+	.item
+		position: relative
 		.text-title
-			color: $color-white
 			position: absolute
-			top: 25%
-			font-size: 200%
+			top: 50%
 			left: 10%
-			font-weight: bold
-		.text-detail
-			color: $color-white
-			position: absolute
-			top: 35%
-			font-size: 120%
-			left: 10%
+			transform: translateY(-50%)
+			h2
+				color: $color-white
+			.text-detail
+				font-size: 1.5rem
+				color: $color-white
+
 	.article-2
-		min-height: 100px
+		position: relative
 		h2
 			text-align: center
-			&:before
-				content: ''
-				display: block
-				width: 4rem
-				height: 0.2rem
+			color: $color-purple
+			span
+				color: $color-black
+		a 
+			text-decoration: none
+		&:before
+			content: ''
+			display: block
+			width: 4rem
+			height: 0.2rem
+			position: absolute
+			background: $color-purple 
+			left: 50%
+			top: 80px
+			transform: translateX(-50%)
+		.item
+			figure
+				position: relative
+				overflow: hidden
+				.img-hover
+					position: absolute
+					left: 50%
+					opacity: 0
+					z-index: 999
+					top: 50%
+					transform: translateX(-50%)
+				&:before
+					content: ''
+					display: block
+					width: 100%
+					height: 100%
+					background: rgba($color-black,0.5)
+					position: absolute
+					right: -100%
+					bottom: 0
+					transition: 0.5s all ease-in-out
+				&:after
+					content: ''
+					display: block
+					width: 100%
+					height: 100%
+					background: rgba($color-black,0.5)
+					position: absolute
+					right: 100%
+					bottom: 0
+					transition: 0.5s all ease-in-out
+			&:hover
+				figure
+					&:before
+						right: -50%
+					&:after
+						right: 50%
+					.img-hover
+						opacity: 1
+						position: absolute
+						display: block
+				.figure-caption
+					h5 
+						color: $color-purple
+					.text-detail
+						color: $color-black
+	.article-3
+		height: 30vh
+		.owl-carousel
+			%owl-navbar
 				position: absolute
-				background: $color-purple 
+				top: 50%
+				transform: translateY(-50%)
+				width: 2rem
+				height: 2rem
+			.owl-prev
+				@extend %owl-navbar
+				left: -3rem
+
+			.owl-next
+				@extend %owl-navbar
+				right: -3rem
+			.owl-dots
+				position: absolute
+				bottom: 0.1rem
 				left: 50%
-				bottom: -8px
 				transform: translateX(-50%)
+
