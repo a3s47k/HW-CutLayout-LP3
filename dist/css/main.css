@@ -6383,7 +6383,8 @@ body {
         font-size: 1.5rem;
         color: #fff; }
   body .article-2 {
-    position: relative; }
+    position: relative;
+    align-content: center; }
     body .article-2 h2 {
       text-align: center;
       color: #9644a2; }
@@ -6401,17 +6402,20 @@ body {
       left: 50%;
       top: 80px;
       transform: translateX(-50%); }
-    body .article-2 .item figure {
+    body .article-2 .item figure .content-image {
       position: relative;
-      overflow: hidden; }
-      body .article-2 .item figure .img-hover {
+      overflow: hidden;
+      border-radius: 0.5rem; }
+      body .article-2 .item figure .content-image .img-hover {
         position: absolute;
         left: 50%;
         opacity: 0;
         z-index: 999;
         top: 50%;
         transform: translateX(-50%); }
-      body .article-2 .item figure:before {
+      body .article-2 .item figure .content-image .img-cover {
+        width: 100%; }
+      body .article-2 .item figure .content-image:before {
         content: '';
         display: block;
         width: 100%;
@@ -6421,7 +6425,7 @@ body {
         right: -100%;
         bottom: 0;
         transition: 0.5s all ease-in-out; }
-      body .article-2 .item figure:after {
+      body .article-2 .item figure .content-image:after {
         content: '';
         display: block;
         width: 100%;
@@ -6431,17 +6435,17 @@ body {
         right: 100%;
         bottom: 0;
         transition: 0.5s all ease-in-out; }
-    body .article-2 .item:hover figure:before {
+    body .article-2 .item:hover figure .content-image:before {
       right: -50%; }
-    body .article-2 .item:hover figure:after {
+    body .article-2 .item:hover figure .content-image:after {
       right: 50%; }
-    body .article-2 .item:hover figure .img-hover {
+    body .article-2 .item:hover figure .content-image .img-hover {
       opacity: 1;
       position: absolute;
       display: block; }
-    body .article-2 .item:hover .figure-caption h5 {
+    body .article-2 .item:hover figure .figure-caption h5 {
       color: #9644a2; }
-    body .article-2 .item:hover .figure-caption .text-detail {
+    body .article-2 .item:hover figure .figure-caption .text-detail {
       color: #000000; }
   body .article-3 {
     height: 30vh; }

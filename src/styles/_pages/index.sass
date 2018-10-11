@@ -75,6 +75,7 @@ body
 
 	.article-2
 		position: relative
+		align-content: center
 		h2
 			text-align: center
 			color: $color-purple
@@ -94,50 +95,57 @@ body
 			transform: translateX(-50%)
 		.item
 			figure
-				position: relative
-				overflow: hidden
-				.img-hover
-					position: absolute
-					left: 50%
-					opacity: 0
-					z-index: 999
-					top: 50%
-					transform: translateX(-50%)
-				&:before
-					content: ''
-					display: block
-					width: 100%
-					height: 100%
-					background: rgba($color-black,0.5)
-					position: absolute
-					right: -100%
-					bottom: 0
-					transition: 0.5s all ease-in-out
-				&:after
-					content: ''
-					display: block
-					width: 100%
-					height: 100%
-					background: rgba($color-black,0.5)
-					position: absolute
-					right: 100%
-					bottom: 0
-					transition: 0.5s all ease-in-out
+				.content-image
+					position: relative
+					overflow: hidden
+					border-radius: 0.5rem
+					.img-hover
+						position: absolute
+						left: 50%
+						opacity: 0
+						z-index: 999
+						top: 50%
+						transform: translateX(-50%)
+					.img-cover
+						width: 100%
+					&:before
+						content: ''
+						display: block
+						width: 100%
+						height: 100%
+						background: rgba($color-black,0.5)
+						position: absolute
+						right: -100%
+						bottom: 0
+						transition: 0.5s all ease-in-out
+					&:after
+						content: ''
+						display: block
+						width: 100%
+						height: 100%
+						background: rgba($color-black,0.5)
+						position: absolute
+						right: 100%
+						bottom: 0
+						transition: 0.5s all ease-in-out
+				figcaption
+					
 			&:hover
 				figure
-					&:before
-						right: -50%
-					&:after
-						right: 50%
-					.img-hover
-						opacity: 1
-						position: absolute
-						display: block
-				.figure-caption
-					h5 
-						color: $color-purple
-					.text-detail
-						color: $color-black
+					.content-image
+						&:before
+							right: -50%
+						&:after
+							right: 50%
+						.img-hover
+							opacity: 1
+							position: absolute
+							display: block
+					.figure-caption
+						h5 
+							color: $color-purple
+						.text-detail
+							color: $color-black
 	.article-3
 		height: 30vh
 		.owl-carousel
