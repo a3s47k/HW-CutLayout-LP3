@@ -6450,22 +6450,25 @@ body {
       color: #9644a2; }
     body .article-2 .item:hover figure .figure-caption .text-detail {
       color: #000000; }
-  body .article-3 {
-    height: 30vh; }
-    body .article-3 .owl-carousel .owl-prev, body .article-3 .owl-carousel .owl-next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 5%;
-      height: 100%; }
-    body .article-3 .owl-carousel .owl-prev {
-      left: -3rem; }
-    body .article-3 .owl-carousel .owl-next {
-      right: -3rem; }
-    body .article-3 .owl-carousel .owl-dots {
-      position: absolute;
-      bottom: 0.1rem;
-      left: 50%;
-      transform: translateX(-50%); }
+  body .article-3 .owl-carousel .owl-prev, body .article-3 .owl-carousel .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 2rem; }
+  body .article-3 .owl-carousel .owl-prev {
+    left: -3rem; }
+  body .article-3 .owl-carousel .owl-next {
+    right: -3rem; }
+  body .article-3 .owl-carousel .owl-dots {
+    position: absolute;
+    bottom: 0.1rem;
+    left: 50%;
+    transform: translateX(-50%); }
+  body .article-3 .owl-carousel .owl-item img {
+    display: block;
+    height: 100%;
+    width: auto;
+    min-width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

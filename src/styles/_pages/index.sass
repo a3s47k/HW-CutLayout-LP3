@@ -150,14 +150,13 @@ body
 						.text-detail
 							color: $color-black
 	.article-3
-		height: 30vh
 		.owl-carousel
 			%owl-navbar
 				position: absolute
 				top: 50%
 				transform: translateY(-50%)
-				width: 5%
-				height: 100%
+				width: 2rem
+				height: 2rem
 			.owl-prev
 				@extend %owl-navbar
 				left: -3rem
@@ -170,4 +169,10 @@ body
 				bottom: 0.1rem
 				left: 50%
 				transform: translateX(-50%)
+			.owl-item
+				img
+					display: block
+					height: 100%
+					width: auto
+					min-width: 100%
 
